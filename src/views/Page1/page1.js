@@ -4,7 +4,7 @@ export default class Page1 extends Component {
     render() {
         return (
             <div>
-                page1
+                page1页面展示
             </div>
         )
     }
