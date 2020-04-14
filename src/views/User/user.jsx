@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Icon, Breadcrumb } from '_antd@3.26.11@antd';
-import './index.less'
+import { Layout, Menu, Icon, Breadcrumb } from 'antd';
 import { HashRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import routes from '../../routes'
-import './index.less'
+import style from './index.less'
 import menuList from '../../utils/menuconfig'
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -50,8 +49,8 @@ export default class User extends Component {
       isLogin ?
         <Layout style={{ minHeight: '100vh' }}>
           <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
-            <div className="logo"></div>
-            <Menu theme="dark" mode="inline" onClick={this.onMenuClick}>
+            <div className={style.logo}></div>
+            <Menu theme="dark" mode="inline" onClick={this.onMenuClick} defaultSelectedKeys={['/user/page1']}>
               {
                 this.state.menuTreeNode
               }
@@ -75,6 +74,7 @@ export default class User extends Component {
                     )
                   })
                 }
+                <Redirect to='/user/page1' from='/user' exact />
               </Switch>
             </Content>
             <Footer style={{ textAlign: 'center', backgroundColor: '#fff' }}>Ant Design ©2018 Created by Ant UED</Footer>

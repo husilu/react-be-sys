@@ -18,7 +18,7 @@ const menuList = [
     ]
   },
   {
-    title: "page3",
+    title: "表格",
     key: "/user/page3"
   }
 ];

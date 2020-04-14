@@ -3,7 +3,6 @@ import { HashRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
 export default class routeLayout extends Component {
   render() {
-    console.log(this.props)
     const routes = this.props.route.children;
     return (
       <>
