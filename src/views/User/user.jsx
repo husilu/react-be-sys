@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Layout, Menu, Icon, Breadcrumb } from 'antd';
+import { Layout, Menu, Breadcrumb } from 'antd';
 import { HashRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import routes from '../../routes'
 import style from './index.less'
