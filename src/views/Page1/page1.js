@@ -5,7 +5,6 @@ import Parent from './parent'
 import style from './style.less'
 
 export default class Page1 extends Component {
-<<<<<<< HEAD
   constructor(props) {
     super()
     this.myRef = React.createRef()
@@ -13,14 +12,6 @@ export default class Page1 extends Component {
       showdiv: true,
       showflag: false,
       info: 'abc'
-=======
-    render() {
-        return (
-            <div>
-                page1页面展示
-            </div>
-        )
->>>>>>> 2dcdeab49c65de0a034dadac323e85ebd87cd703
     }
   }
   okHandler = (arg,e) => {
